@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAKORDIA Indonesia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="https://i.ibb.co.com/BZTVBqw/hn-logo-design-initial-hn-letter-logo-monogram-design-in-black-and-red-color-with-square-shape-pro-v.png" type="image/png">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="" class="company-logo">
+                <img src="./images/t1.png" alt="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="cybersecurity" onclick="onNavItemClick('cybersecurity')">Cybersecurity</li>
+                    <li class="hover-link nav-item" id="KPU 2024" lang="id" onclick="onNavItemClick('KPU 2024')">DPT</li>
+                    <li class="hover-link nav-item" id="Indonesia" onclick="onNavItemClick('Korupsi')">Indonesia</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link nav-item" id="Politik Berita" onclick="onNavItemClick('Politik Berita')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g. Kasus">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cardscontainer"></div>
+    </main>
+
+    <!-- Template untuk Kartu Berita -->
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">News Title</h3>
+                <h6 class="news-source" id="news-source">Source Name · Date</h6>
+                <p class="news-desc" id="news-desc">News description...</p>
+            </div>
+        </div>
+    </template>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container flex">
+            <p>
+                © 2024 Hakordia Media, PT. HAKORDIA Indonesia, logo and all associated elements (R) and © 2024 Hakordia News Network, Inc. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
